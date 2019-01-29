@@ -18,6 +18,7 @@
 
 #include <gtk/gtk.h>
 
+#include "config.h"
 #include "wb-application.h"
 #include "wb-window.h"
 
@@ -51,6 +52,8 @@ on_about (GSimpleAction *action,
                            "copyright", "Copyright © 2018 Jonathan Kang",
                            "license-type", GTK_LICENSE_GPL_3_0,
                            "logo-icon-name", "com.jonathankang.Weibird",
+                           "program-name", "Weibird",
+                           "version", PACKAGE_VERSION,
                            "website", "https://github.com/JonathanKang/Weibird",
                            NULL);
 }
